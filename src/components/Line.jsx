@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SignOut from './SignOut'
 import { db } from '../firebase'
+import SendMessage from './SendMessage';
 
 function Line() {
   const [messages, setMessages] = useState([]);
@@ -27,6 +28,7 @@ function Line() {
           </div>
         ))}
       </div>
+      <SendMessage />
     </div >
   )
 }
